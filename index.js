@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 
 (async () => {
   const browser = await puppeteer.launch({
-    // headless: false,
+    args: ['--no-sandbox']
   });
   const page = await browser.newPage();
 
